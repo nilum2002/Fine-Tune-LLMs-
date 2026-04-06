@@ -1,6 +1,64 @@
 
+# LLM Fine-Tuning.
+
+A comprehensive, hands-on guide to fine-tuning large language models using Google Colab and Jupyter Notebooks.
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Colab](https://img.shields.io/badge/Google%20Colab-Ready-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Beginner Friendly](https://img.shields.io/badge/Level-Beginner%20Friendly-brightgreen)
+
+---
+
+---
+
+## 🧠 Overview
+
+This repository provides beginner-friendly notebooks to fine-tune modern open-source LLMs on custom datasets.
+
+I have added the theory points everyone should know about LLM fine-tuning.
+
+---
+
+## 🗂️ Models Covered
+
+| Model | Parameters | Provider | Notebook |
+|-------|-----------|----------|----------|
+| Gemma 2 Instruct | 270M | Google DeepMind | `gemma2_instruct_270m_finetune.ipynb` |
+| Gemma 3 Instruct | 270M | Google DeepMind | `gemma3_instruct_270m_finetune.ipynb` |
+| Gemma 3 | 1B | Google DeepMind | `gemma3_1b_finetune.ipynb` |
+| Llama 2 | 7B | Meta AI | `llama2_7b_finetune.ipynb` |
 
 
+---
+
+## 📊 Results
+
+Training times and GPU memory usage on a free Colab T4 (16GB VRAM):
+
+| Model | Approx. Train Time (1 epoch) | Peak VRAM |
+|-------|------------------------------|-----------|
+| Gemma 2 Instruct 270M | ~8 min | ~4 GB |
+| Gemma 3 Instruct 270M | ~10 min | ~4 GB |
+| Gemma 3 1B | ~20 min | ~8 GB |
+| Llama 2 7B | ~45 min | ~14 GB |
+
+> Results vary based on dataset size and batch size settings.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to add a new model notebook, fix a bug, or improve the documentation:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/my-new-notebook`)
+3. Make your changes and commit (`git commit -m 'Add Mistral 7B notebook'`)
+4. Push to your branch and open a Pull Request
+
+Please make sure all notebooks run **end-to-end on a free Colab T4 GPU** before submitting.
+
+---
 
 
 
